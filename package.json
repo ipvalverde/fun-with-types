@@ -1,0 +1,17 @@
+{
+  "name": "fun-with-types",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.9.6"
+  },
+  "scripts": {
+    "start": "cls & ts-node ./src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.22",
+    "colors": "^1.4.0",
+    "ts-node": "^8.10.2"
+  }
+}

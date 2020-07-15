@@ -14,5 +14,5 @@ class User {
     ) {}
 }
 
-// const user = new User(1, "username");
+// const user = new User(12, "Israel");
 // print(user);

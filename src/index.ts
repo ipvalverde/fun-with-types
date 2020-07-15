@@ -6,7 +6,6 @@ const originalLog = console.log;
 
 console.log = function (message: string) {
   originalLog(`
-  
 >> ${colors.yellow(message)}
 `);
 };
@@ -51,7 +50,7 @@ async function loadFile(directory: string, fileIndex: string) {
   const fileMap = await loadAllFiles(targetDirectory);
   const fileName = fileMap[fileIndex] || fileIndex;
 
-  originalLog(colors.cyan(fileName));
+  originalLog(colors.cyan(fileName), "\n");
 
   require(path.join(targetDirectory, fileName));
 }

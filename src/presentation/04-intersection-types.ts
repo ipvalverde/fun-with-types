@@ -12,14 +12,15 @@ const book = new Book(1, "Having fun with TypeScript", new Date(2020, 6, 14));
 printBook(book);
 // book.printStatus();
 
-const rentableBook = makeRentable(book);
-printBook(rentableBook);
-console.log(`is same instance? ${book === rentableBook}`);
 
-rentableBook.printStatus();
+// const rentableBook = makeRentable(book);
+// printBook(rentableBook);
+// console.log(`is same instance? ${book === rentableBook}`);
 
-rentableBook.rent(new Date(2020, 6, 14), "John");
-rentableBook.printStatus();
+// rentableBook.printStatus();
 
-rentableBook.return();
-rentableBook.printStatus();
+// rentableBook.rent(new Date(2020, 6, 14), "John");
+// rentableBook.printStatus();
+
+// rentableBook.return();
+// rentableBook.printStatus();

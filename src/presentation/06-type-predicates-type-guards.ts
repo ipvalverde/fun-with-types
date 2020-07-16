@@ -13,15 +13,15 @@ interface Motorcycle {
     wheels: number;
 }
 
-// isCar({ make: "Peugeot", price: 25000, year: 2015, wheels: 4 });
+isCar({ make: "Peugeot", price: 25000, year: 2015, wheels: 4 });
 // getValuation({ make: "Honda", price: 5600, year: 2018, wheels: 2 });
 
 function isCar(vehicle: Car | Motorcycle) {
-    if (vehicle.wheels === 4) {
-        console.log("vehicle is a car");
+    if ("seats" in vehicle) {
+        console.log("vehicle is a car. Right???");
     }
     else {
-        console.log("vehicle is a car");
+        console.log("vehicle is a motorcycle");
     }
 }
 

@@ -5,9 +5,7 @@ import * as path from "path";
 const originalLog = console.log;
 
 console.log = function (message: string) {
-  originalLog(`
->> ${colors.yellow(message)}
-`);
+  originalLog("\n>>", colors.yellow(message), "\n");
 };
 
 function loadAllFiles(

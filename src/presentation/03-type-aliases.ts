@@ -7,12 +7,7 @@ type Vehicle = IVehicle;
 
 
 
-// interface IVehicle {
-//     reg: string;
-//     year: number;
-//     originalPrice: number;
-// }
-
-// function getCarValuation(car: IVehicle) {
-//     // ...
-// }
+function getCarValuation(car: Vehicle) {
+    car.make;
+    // ...
+}

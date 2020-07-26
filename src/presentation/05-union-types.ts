@@ -20,7 +20,15 @@ type FlyingObject = Bird | Airplane | Superman;
 
 // Type guards using the "in" operator
 function printFlyingObject(flyingObject: FlyingObject) {
-    
+    if ("model" in flyingObject) {
+        printAirplane(flyingObject);
+    }
+    else if ("species" in flyingObject) {
+        printBird(flyingObject);
+    }
+    else {
+        printSuperman(flyingObject);
+    }
 }
 
 printFlyingObject({ species: "nightingale", isSingingBird: true });
